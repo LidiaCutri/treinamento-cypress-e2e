@@ -8,6 +8,7 @@ module.exports = defineConfig({
     baseUrl: 'https://notes-serverless-app.com',
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-grep/src/plugin')(config)
     },
     experimentalRunAllSpecs: true,
     experimentalSessionSupport: true,
@@ -16,3 +17,7 @@ module.exports = defineConfig({
     projectId: "tzzaqa",
   },
 });
+
+module.exports = (on, config) => {
+  require('cypress-grep/src/plugin')(config)
+}
