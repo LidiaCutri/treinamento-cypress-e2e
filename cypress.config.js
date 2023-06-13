@@ -12,6 +12,7 @@ module.exports = defineConfig({
     experimentalRunAllSpecs: true,
     experimentalSessionSupport: true,
     chromeWebSecurity: false,
-    experimentalStudio: true    
+    experimentalStudio: true,
+    projectId: "tzzaqa",
   },
 });
