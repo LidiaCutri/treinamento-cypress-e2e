@@ -1,9 +1,8 @@
 {
   "name": "treinamento-btg-cypress-e2e",
   "version": "1.0.0",
-  "description": "👋 Seja bem vindo(a)!",
-  "main": "index.js",
-  "scripts": {
+  "description": "Sample project to demonstrate e2e tests written with Cypress running on GitHub Actions",
+    "scripts": {
     "cy:open": "cypress open",
     "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
     "test": "cypress run --record --tag 'desktop'",
@@ -11,7 +10,6 @@
     "lint": "eslint cypress/**/*.js",
     "lint:fix": "eslint cypress/**/*.js --fix"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
